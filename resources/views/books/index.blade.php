@@ -4,6 +4,7 @@
     @foreach($books as $book)
         <li>
             <h2>{{ $book->title }}</h2>
+            <p>{{ $book->author }}</p>
             <div>
                 <a href="/books/{{ $book->id }}">Show</a>
                 <a href="/books/{{ $book->id }}/edit">Edit</a>
