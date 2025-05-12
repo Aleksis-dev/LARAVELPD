@@ -5,7 +5,7 @@
         <li>
             <h2>{{ $book->title }}</h2>
             <div>
-                <a href="/books/{{ $book->id }}/show">Show</a>
+                <a href="/books/{{ $book->id }}g">Show</a>
                 <a href="/books/{{ $book->id }}/edit">Edit</a>
                 <form action="/books/{{ $book->id }}/destroy" method="post">
                     @csrf
