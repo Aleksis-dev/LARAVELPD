@@ -49,6 +49,6 @@ class BookController extends Controller
 
     public function destroy(Post $post) {
         $post->delete();
-        return redirect('/books/')
+        return redirect('/books/');
     }
 }
