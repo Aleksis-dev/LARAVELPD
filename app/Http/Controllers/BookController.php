@@ -33,7 +33,7 @@ class BookController extends Controller
 
     public function edit($id) {
         $book = Book::find($id);
-        return $book;
+        return view('books.edit', ['book' => $book]);
     }
 
     public function update(Request $request, $id) {
